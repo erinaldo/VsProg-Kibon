@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.875" name="dcxMatGrava">
+  <DataContextMoniker Name="/dcMatGrava" />
+  <nestedChildShapes>
+    <classShape Id="0c8a3f06-96c2-49aa-978a-af14e3709e44" absoluteBounds="0.75, 0.75, 2, 8.8204777018229148">
+      <DataClassMoniker Name="/dcMatGrava/MatGravaHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90c92708-e237-4edc-b5c8-575ab144791f" absoluteBounds="0.765, 1.21, 1.9700000000000002, 8.2604777018229161" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f77acd6-90c0-4c7f-9c67-8a39d5c10a34" absoluteBounds="3.75, 0.75, 2, 1.75354248046875">
+      <DataClassMoniker Name="/dcMatGrava/MatHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4eec552a-4a70-4a1e-9133-4159e3647d47" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

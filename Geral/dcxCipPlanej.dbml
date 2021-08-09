@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CipPlanej" EntityNamespace="nsCipPlanej" ContextNamespace="nsCipPlanej" Class="dcCipPlanej" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=CipPlanej;Persist Security Info=True;User ID=Tse" SettingsObjectName="Geral.My.MySettings" SettingsPropertyName="csCipPlanej" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CipHist" Member="CipHist">
+    <Type Name="CipHist">
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="Blk0" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk0Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk0SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk0SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk1Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk1SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk1SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk2Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk2SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk2SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk3Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk3SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk3SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk4Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk4SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk4SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk5Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk5SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk5SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk6Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk6SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk6SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk7Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk7SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk7SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk8" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk8Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk8SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk8SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk9" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk9Tempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk9SpTemp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Blk9SpCond" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipPlanej" Member="CipPlanej">
+    <Type Name="CipPlanej">
+      <Column Name="Circ" Type="System.String" DbType="NVarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sequencia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota8" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota9" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubRota10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BbaCipFw" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

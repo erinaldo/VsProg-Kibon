@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AB3A711B-FD17-414A-957A-E07783C66D70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KbToledoRelat.My.MyApplication</StartupObject>
+    <RootNamespace>KbToledoRelat</RootNamespace>
+    <AssemblyName>KbToledoRelat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KbToledoRelat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>KbToledoRelat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\Bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="MDIWindowManager">
+      <HintPath>..\Bin\MDIWindowManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq.Expressions" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Artigo\frmDadosArtAtv.Designer.vb">
+      <DependentUpon>frmDadosArtAtv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmDadosArtAtv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artigo\frmDadosArt.Designer.vb">
+      <DependentUpon>frmDadosArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmDadosArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contadores\frmContGood.Designer.vb">
+      <DependentUpon>frmContGood.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contadores\frmContGood.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contadores\frmContMinus.Designer.vb">
+      <DependentUpon>frmContMinus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contadores\frmContMinus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contadores\frmContPlus.Designer.vb">
+      <DependentUpon>frmContPlus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contadores\frmContPlus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artigo\frmStatTot2Art.Designer.vb">
+      <DependentUpon>frmStatTot2Art.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmStatTot2Art.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artigo\frmStatTotArt.Designer.vb">
+      <DependentUpon>frmStatTotArt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmStatTotArt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelat.Designer.vb">
+      <DependentUpon>frmRelat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatBatchAtu.Designer.vb">
+      <DependentUpon>frmEstatBatchAtu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatBatchAtu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatInt.Designer.vb">
+      <DependentUpon>frmEstatInt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatInt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatTot.Designer.vb">
+      <DependentUpon>frmEstatTot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatTot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatUltBatch.Designer.vb">
+      <DependentUpon>frmEstatUltBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatUltBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatUltInter.Designer.vb">
+      <DependentUpon>frmEstatUltInter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estatisticas\frmEstatUltInter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artigo\frmArtigos.Designer.vb">
+      <DependentUpon>frmArtigos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmArtigos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeraRelat.Designer.vb">
+      <DependentUpon>frmGeraRelat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeraRelat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artigo\frmLimDesl.Designer.vb">
+      <DependentUpon>frmLimDesl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Artigo\frmLimDesl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIfRelat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIfRelat.Designer.vb">
+      <DependentUpon>frmIfRelat.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historico\frmHist.Designer.vb">
+      <DependentUpon>frmHist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Historico\frmHist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maquina\frmMaq.Designer.vb">
+      <DependentUpon>frmMaq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maquina\frmMaq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRelatOld.Designer.vb">
+      <DependentUpon>frmRelatOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRelatOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zona\frmZonClass.Designer.vb">
+      <DependentUpon>frmZonClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Zona\frmZonClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Artigo\frmDadosArtAtv.resx">
+      <DependentUpon>frmDadosArtAtv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artigo\frmDadosArt.resx">
+      <DependentUpon>frmDadosArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artigo\frmArtigos.resx">
+      <DependentUpon>frmArtigos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contadores\frmContGood.resx">
+      <DependentUpon>frmContGood.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contadores\frmContMinus.resx">
+      <DependentUpon>frmContMinus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contadores\frmContPlus.resx">
+      <DependentUpon>frmContPlus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artigo\frmStatTot2Art.resx">
+      <DependentUpon>frmStatTot2Art.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artigo\frmStatTotArt.resx">
+      <DependentUpon>frmStatTotArt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelat.resx">
+      <DependentUpon>frmRelat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\frmEstatBatchAtu.resx">
+      <DependentUpon>frmEstatBatchAtu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\frmEstatInt.resx">
+      <DependentUpon>frmEstatInt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\frmEstatTot.resx">
+      <DependentUpon>frmEstatTot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\frmEstatUltBatch.resx">
+      <DependentUpon>frmEstatUltBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estatisticas\frmEstatUltInter.resx">
+      <DependentUpon>frmEstatUltInter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeraRelat.resx">
+      <DependentUpon>frmGeraRelat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artigo\frmLimDesl.resx">
+      <DependentUpon>frmLimDesl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIfRelat.resx">
+      <DependentUpon>frmIfRelat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historico\frmHist.resx">
+      <DependentUpon>frmHist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maquina\frmMaq.resx">
+      <DependentUpon>frmMaq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRelatOld.resx">
+      <DependentUpon>frmRelatOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zona\frmZonClass.resx">
+      <DependentUpon>frmZonClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geral\Geral.vbproj">
+      <Project>{70717221-C16B-4A7C-9041-E37153528DD5}</Project>
+      <Name>Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{AB58F8F2-0B21-4A73-83DB-8452A58D1AA6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tse.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

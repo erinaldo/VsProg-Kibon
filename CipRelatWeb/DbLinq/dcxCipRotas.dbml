@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CipRotas" EntityNamespace="nsCipRotas" ContextNamespace="nsCipRotas" Class="dcCipRotas" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=CipRotas;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csCipRotas" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ConfigGeral" Member="ConfigGeral">
+    <Type Name="ConfigGeral">
+      <Column Name="Item" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ValvCad" Member="ValvCad">
+    <Type Name="ValvCad">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Consulta1" Member="Consulta1">
+    <Type Name="Consulta1">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Num" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Consulta2" Member="Consulta2">
+    <Type Name="Consulta2">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.dtproperties" Member="dtproperties">
+    <Type Name="dtproperties">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="objectid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="property" Type="System.String" DbType="VarChar(64) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="uvalue" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="lvalue" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="version" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FlipCad" Member="FlipCad">
+    <Type Name="FlipCad">
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descr" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MotCad" Member="MotCad">
+    <Type Name="MotCad">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MotPlc1" Member="MotPlc1">
+    <Type Name="MotPlc1">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MotSemPlc" Member="MotSemPlc">
+    <Type Name="MotSemPlc">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PfCad" Member="PfCad">
+    <Type Name="PfCad">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaCad" Member="RotaCad">
+    <Type Name="RotaCad">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Circ" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tq1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tq2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tq3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sequencia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RotaTipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BbaCipFw" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaDepend" Member="RotaDepend">
+    <Type Name="RotaDepend">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaMot" Member="RotaMot">
+    <Type Name="RotaMot">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaPf" Member="RotaPf">
+    <Type Name="RotaPf">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaSub" Member="RotaSub">
+    <Type Name="RotaSub">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Rota1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Rota2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RotaValv" Member="RotaValv">
+    <Type Name="RotaValv">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tag" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TagsPlc1" Member="TagsPlc1">
+    <Type Name="TagsPlc1">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TagsSemPlc" Member="TagsSemPlc">
+    <Type Name="TagsSemPlc">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TqCad" Member="TqCad">
+    <Type Name="TqCad">
+      <Column Name="Tag" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PlcNum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlcIdx" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

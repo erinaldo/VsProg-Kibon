@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Ranges" EntityNamespace="nsRanges" ContextNamespace="nsRanges" Class="dcRanges" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=Ranges;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csRanges" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NumSeqMensal" Member="NumSeqMensal">
+    <Type Name="NumSeqMensal">
+      <Column Name="AnoUlt" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MesUlt" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumSeqMensal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ranges" Member="Ranges">
+    <Type Name="Ranges">
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DensMin" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DensMed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DensMax" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SolMin" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SolMed" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SolMax" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

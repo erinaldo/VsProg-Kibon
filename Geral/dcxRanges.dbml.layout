@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dcxRanges">
+  <DataContextMoniker Name="/dcRanges" />
+  <nestedChildShapes>
+    <classShape Id="f5cd7edc-5ea4-4bcc-9970-0b6d4671b2ab" absoluteBounds="0.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/dcRanges/NumSeqMensal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="607ed25e-76e5-4aa0-95e3-525946a7ffb2" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb9bcb01-5767-42ee-a8d7-a2bae5117055" absoluteBounds="3.75, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dcRanges/Ranges" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5e56cb5-b249-4162-81ab-5c1c5adc8ec6" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a3af8e9-fd56-4585-8445-5c2c5d9f655e" absoluteBounds="6.75, 0.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/dcRanges/SrvChk" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd9fa7c0-864a-4b3c-a779-960ceeb785bc" absoluteBounds="6.765, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

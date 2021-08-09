@@ -1,0 +1,71 @@
+
+ID da maquina
+
+Nome do produto
+Peso nominal
+Peso Tara
+
+Hora de inicio
+Hora final
+
+Total verificado
+Total aceito
+Valor medio
+Desvio padrao
+
+Total de rejeitos
+Nao pesados
+
+Giveway
+
+MM Alto
+M Alto
+Alto OK
+Nominal
+Baixo
+Extra
+
+=======================================================
+
+FB_PD - O computador externo pode consultar os dados de produção
+Para o envio de todos os blocos de usar a instrução resumida " FB_PD ¬ + *
+
+"A ": " FB_PD_PLUS " , com os dados das zonas mais ( ponderações ) (63)
+"B ": " FB_PD_GUT " , com os dados da zona BOA (47)
+"C ": " FB_PD_MINUS " , com os dados da zona MENOS (94)
+"D ": " FB_PD_STAT " , com o total de dados estatísticos (150)
+"E ": " FB_PD_AKTINT " , com os dados do intervalo de estatísticas atual (112)
+"F ": " FB_PD_LASTINT " , com os dados do último intervalo estatísticas concluída (113)
+"G ": " FB_PD_14 " , com os dados do 14- zonas de distribuição Mettler (137)
+"H ": " FB_PD_CHARGE " , com os dados do grupo atual (123)
+"I ": " FB_PD_LASTCHR " , com os dados do último lote concluída (124)
+"J ": " FB_PD_HOUR " , com os dados da hora de produção (150)
+"K ": " FB_PD_LASTHR " , com os dados da última hora de produção (152)
+"d ": " FB_SD_STAT " , com os níveis de contador de rejeição do total de estatísticas (48)
+"e ": " FB_SD_AKTINT " , com o contador de níveis de estatísticas do intervalo atual de rejeição (50)
+"f ": " FB_SD_LASTINT " , com os níveis de balcão rejeição do último intervalo de estatísticas (51)
+"h ": " FB_SD_CHARGE " , com os níveis de balcão rejeição do lote atual (50)
+"i ": " FB_SD_LASTCHR " , com o contador níveis do último lote de rejeição (51)
+"j ": " FB_SD_HOUR " , com os níveis de contador de rejeito da hora de produção (48)
+"k ": " FB_SD_LASTHR " , com os níveis de contador de rejeito da última hora de produção (50)
+
+
+=======================================================
+
+FB_ABLAGEN - Solicita os dados gravados do artigo atual.
+
+FB_ABL¬ identificacao do do bloco
+XX¬ numero do bloco atual int
+XXXXX¬ hora de inicio char
+XXXXXXXX¬ data de inicio char
+XXXXX¬ hora final char
+XXXXXXXX¬ data final char
+XXXXXXXX¬ rendimento long
+XXXXXXXX¬ mean value float
+XXXXXXXX TU1% (percentage of TU1 infringements) float (only if optional 'statistics')
+CR)(LF) block termination
+total: 68 characters
+
+=======================================================
+
+FB_SENDEN - Solicita os dados corrente do artigo ativo

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9" name="dcxCipPlanej">
+  <DataContextMoniker Name="/dcCipPlanej" />
+  <nestedChildShapes>
+    <classShape Id="4319147e-82a1-4bf1-8a23-53d471698c49" absoluteBounds="0.75, 0.75, 2, 7.9987410481770826">
+      <DataClassMoniker Name="/dcCipPlanej/CipHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="127b8101-421f-42aa-950b-ffa20733d0bb" absoluteBounds="0.765, 1.21, 1.9700000000000002, 7.438741048177083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b89f188e-269b-4ab7-9324-e4e48e37ea46" absoluteBounds="3.75, 0.75, 2, 3.2326684570312505">
+      <DataClassMoniker Name="/dcCipPlanej/CipPlanej" />
+      <nestedChildShapes>
+        <elementListCompartment Id="905fcaff-6c5f-43b8-8672-a7812b840c0c" absoluteBounds="3.765, 1.21, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

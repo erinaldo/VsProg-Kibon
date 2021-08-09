@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PastGrava" EntityNamespace="nsPastGrava" ContextNamespace="nsPastGrava" Class="dcPastGrava" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=PastGrava;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csPastGrava" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cfg" Member="Cfg">
+    <Type Name="Cfg">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastGravaHistDadosBk" Member="PastGravaHistDadosBk">
+    <Type Name="PastGravaHistDadosBk">
+      <Column Name="HistId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TqOrig" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TqDest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PressaoEst1" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PressaoEst2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFdvPv" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFdvSp" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFinalPast" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresFinalPast" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ValvFdvA" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ValvFdvB" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresHomoEntr" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresHomoSaida" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempAguaAlcool" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva3" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva4" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva5" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva6" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FdvGravaHist" Member="FdvGravaHist">
+    <Type Name="FdvGravaHist">
+      <Column Name="FdvId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PastId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FdvGravaHistDados" Member="FdvGravaHistDados">
+    <Type Name="FdvGravaHistDados">
+      <Column Name="FdvID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TempFdvPv" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFdvSp" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ValvFdvA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValvFdvB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastGravaHist" Member="PastGravaHist">
+    <Type Name="PastGravaHist">
+      <Column Name="HistId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="PastId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PastGravaHistDados" Member="PastGravaHistDados">
+    <Type Name="PastGravaHistDados">
+      <Column Name="HistId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TqOrig" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TqDest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PressaoEst1" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PressaoEst2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFdvPv" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFdvSp" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempFinalPast" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresFinalPast" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ValvFdvA" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="ValvFdvB" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresHomoEntr" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="PresHomoSaida" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempAguaAlcool" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva2" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva3" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva4" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva5" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Reserva6" Type="System.Single" DbType="Real" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

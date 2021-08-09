@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 11.625" name="dcxReceitas">
+  <DataContextMoniker Name="/dcReceitas" />
+  <nestedChildShapes>
+    <classShape Id="bfbd57c2-82d5-4707-be0f-16b374248b62" absoluteBounds="0.75, 0.75, 2, 1.75354248046875">
+      <DataClassMoniker Name="/dcReceitas/Areas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea322c9e-be3b-4cab-b1b9-3ddf3c787677" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="699d53b6-5799-48f4-88e3-0b7ed78ab632" absoluteBounds="3.75, 0.75, 2, 1.26050048828125">
+      <DataClassMoniker Name="/dcReceitas/Users" />
+      <nestedChildShapes>
+        <elementListCompartment Id="618b45cc-e389-44aa-8eb7-3187164a97fe" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="77715c2a-44c7-45cb-bc84-2e70451b7349" absoluteBounds="0.75, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcReceitas/Blocos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2efadd14-1507-4b11-b57c-22ffe5de5fa0" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa0078c9-f545-4ea6-921e-b10deba070ad" absoluteBounds="3.75, 3.75, 2, 2.0822371419270826">
+      <DataClassMoniker Name="/dcReceitas/BlocosItens" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03221abc-e52f-47b7-8d16-1c88be50415a" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bafa4a6-0b20-4cf4-b7ad-4b884314a47f" absoluteBounds="6.75, 0.75, 2, 1.2605004882812503">
+      <DataClassMoniker Name="/dcReceitas/CadAlergenicos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a07e412-b842-4357-95c7-e11c8f617c4d" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="098304d5-c007-41bc-a2ba-db851f2d959d" absoluteBounds="0.75, 6.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/dcReceitas/ConfigGeral" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2a2ff397-744f-4a05-909c-63cebc708a95" absoluteBounds="0.765, 7.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0c5bfb5-d1e6-4550-8cf3-876f64365366" absoluteBounds="6.75, 3.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/dcReceitas/DestTqs" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77cbfc4a-4d4c-40f6-baab-769b85182971" absoluteBounds="6.765, 4.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a7efcab-c901-4061-8c6b-fe5a9b9f6a50" absoluteBounds="3.75, 6.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcReceitas/Ingred" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6b08bf5-4e82-488d-a0f6-e46e71feb3a3" absoluteBounds="3.765, 7.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8fb41384-7148-4b27-a60f-d511e4cc4e8d" absoluteBounds="6.75, 6.75, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/dcReceitas/Rec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f28fb81-16af-4672-9468-2f21774534d2" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9860a2a0-0d0a-48d0-a5f8-5e50c74adfc2" absoluteBounds="9.75, 0.75, 2, 2.9039737955729166">
+      <DataClassMoniker Name="/dcReceitas/RecBlocos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1cf1d3b-5168-4bdb-b545-8e67b0addf9e" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.3439737955729165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18e95499-1b5f-4f7b-804d-7fe54e678f40" absoluteBounds="0.75, 9.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/dcReceitas/RecIngred" />
+      <nestedChildShapes>
+        <elementListCompartment Id="65933375-a975-45a8-893a-5334a290b007" absoluteBounds="0.765, 10.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="468305a5-2480-42da-84fa-74bbe6f5d023" absoluteBounds="3.75, 9.75, 2, 1.5891951497395844">
+      <DataClassMoniker Name="/dcReceitas/RecIngredMat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd4b6aa0-8e47-4608-b333-050c5d963eec" absoluteBounds="3.765, 10.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4aba5175-3a6f-461b-93b9-1c1b461e1121" absoluteBounds="9.75, 4.75, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/dcReceitas/RecTeste" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b552c19b-c78b-4165-8f49-745322a40b69" absoluteBounds="9.765, 5.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

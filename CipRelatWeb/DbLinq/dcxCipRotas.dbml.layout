@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 14.375" name="dcxCipRotas">
+  <DataContextMoniker Name="/dcCipRotas" />
+  <nestedChildShapes>
+    <classShape Id="9e3ca5d6-67bb-4059-9c0e-3429a0e0a1c7" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipRotas/ConfigGeral" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1325c97-8de0-44d0-836d-e66d1c4076a7" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b09218bc-193e-4951-9f97-d9f9ed495624" absoluteBounds="0.75, 2.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/ValvCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="042a7292-6856-4c70-bb93-0986bdff03c7" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bbe4e41-16ea-42d1-bcec-3673311d42fc" absoluteBounds="3.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipRotas/Consulta1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3074afdd-c231-4aae-9e7e-db591d75dc19" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13c8969f-5ca6-42ca-b298-b43758ba1a27" absoluteBounds="3.75, 2.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/Consulta2" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5971114-2d94-4c74-b878-6e5367af28bc" absoluteBounds="3.765, 3.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c08f2a22-df7d-4084-a467-005944af13cc" absoluteBounds="0.75, 5.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/dcCipRotas/dtproperties" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6496f15-6b0c-4494-a910-da1179da0ee9" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9106fff3-406d-4854-b4a9-6f14510c31b6" absoluteBounds="3.75, 5.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipRotas/FlipCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acad9e1b-8dd2-42da-9181-7b5ef2d02f0c" absoluteBounds="3.765, 6.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a88abaa-fd67-45d7-afd0-d9348826454e" absoluteBounds="6.75, 0.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/MotCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5618ad3b-bae8-4d7a-a7d3-dfbbbe30ed49" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5368c47-d251-4a5b-83b2-28eb36555940" absoluteBounds="6.75, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/MotPlc1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c7cbd83c-7ef5-4f8c-b8eb-6a8fb39a37c8" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba4301b6-5380-4155-b1b2-a48d263c3755" absoluteBounds="6.75, 6.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/MotSemPlc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8527e8e-dcea-420d-9981-8a5faf968d65" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96c6a121-0e31-4924-bbd8-edc686c3fef2" absoluteBounds="0.75, 8.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/PfCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80cc6816-4c5f-47e4-af63-f77bdd1bea8a" absoluteBounds="0.765, 9.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="028218f0-5ea4-4820-94f5-46a36e0e7e7b" absoluteBounds="9.75, 0.75, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/dcCipRotas/RotaCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="99273613-c1bc-4d3a-87d0-61002bdec632" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2aab0f7c-0f2a-4814-a990-e108c9ff0e79" absoluteBounds="3.75, 9.75, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/dcCipRotas/RotaDepend" />
+      <nestedChildShapes>
+        <elementListCompartment Id="66f35f1c-c008-47d7-a03e-78256339bbe1" absoluteBounds="3.765, 10.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4d3ad02-f805-4ac5-9eba-e2005ba86f76" absoluteBounds="9.75, 4.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipRotas/RotaMot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="954ff61a-5e6a-4482-92a4-a58c12a0d1d9" absoluteBounds="9.765, 5.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="312340bd-139e-4287-9089-178e65d8d370" absoluteBounds="6.75, 9.75, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/dcCipRotas/RotaPf" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47cc5b27-febc-423d-ad58-5314cb0905cf" absoluteBounds="6.765, 10.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3f929342-39f8-46a7-bdb8-7f894efabb2f" absoluteBounds="9.75, 7.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/RotaSub" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3506d53b-cf0a-44fc-a4d3-d7f3fbd97673" absoluteBounds="9.765, 8.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf6cf6c3-f1e6-479c-8f8e-95f93a2dc0a5" absoluteBounds="9.75, 10.75, 2, 1.2605004882812487">
+      <DataClassMoniker Name="/dcCipRotas/RotaValv" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3964454-d5b4-4a61-b311-01981eddad59" absoluteBounds="9.765, 11.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ceb6c2a2-efa3-481e-86af-06c9f5ed5983" absoluteBounds="12.75, 0.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/TagsPlc1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c1c2eeb-72e1-4b20-9eff-2e0aa638da1a" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f324ed1-cf4d-44f0-b5c6-9fb9cde64ec9" absoluteBounds="0.75, 12.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/TagsSemPlc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f21cc6ec-3bfa-4fbb-a7d0-4f16677888b7" absoluteBounds="0.765, 13.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="089051e3-f1d4-480a-981a-3d00523519c4" absoluteBounds="12.75, 3.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipRotas/TqCad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5ff7cca-19a7-4aed-9086-95463e6ec481" absoluteBounds="12.765, 4.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Toledo" Class="dcToledo" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=OS1\WINCC;Initial Catalog=Toledo;Persist Security Info=True;User ID=Tse" SettingsObjectName="Geral.My.MySettings" SettingsPropertyName="csToledo" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CadCfg" Member="CadCfg">
+    <Type Name="CadCfg">
+      <Column Name="Cfg" Type="System.String" DbType="NVarChar(256) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdZones" Member="SdZones">
+    <Type Name="SdZones">
+      <Column Name="IdSdZones" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NokZona1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OkZona1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NokZona2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OkZona2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NokZona3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OkZona3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NokZona4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OkZona4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeZ4" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NokZona5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OkZona5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeZ5" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DadosArt" Member="DadosArt">
+    <Type Name="DadosArt">
+      <Column Name="ArtId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdMaq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DadosHist" Member="DadosHist">
+    <Type Name="DadosHist">
+      <Column Name="IdMaq" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdHist" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HorIni" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataIni" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Horfin" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataFin" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Rendimento" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ValorMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TU1Infrac" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DadosMaq" Member="DadosMaq">
+    <Type Name="DadosMaq">
+      <Column Name="IdMaq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Maquina" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DadosProd" Member="DadosProd">
+    <Type Name="DadosProd">
+      <Column Name="IdProd" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdMaq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdAktInt" Member="ProdAktInt">
+    <Type Name="ProdAktInt">
+      <Column Name="IdProdAkt" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesvioPadrao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TuLim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTU1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProdTU1LimPerc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdCharge" Member="ProdCharge">
+    <Type Name="ProdCharge">
+      <Column Name="IdProdCharge" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumBatch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesvioPadrao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProdTU1LimPerc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdGut" Member="ProdGut">
+    <Type Name="ProdGut">
+      <Column Name="IdProdGut" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QtdProdGutOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalGutOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioGutOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdSpecial" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdMetalDt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdLastChr" Member="ProdLastChr">
+    <Type Name="ProdLastChr">
+      <Column Name="IdProdLastChr" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumBatch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesvioPadrao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProdTU1LimPerc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdLastInt" Member="ProdLastInt">
+    <Type Name="ProdLastInt">
+      <Column Name="IdProdLastInt" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesvioPadrao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TuLim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTU1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProdTU1LimPerc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdMinus" Member="ProdMinus">
+    <Type Name="ProdMinus">
+      <Column Name="IdProdMinus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QtdProdMinusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalMinusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioMinusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdMinusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalMinusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioMinusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdMinusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalMinusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioMinusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdPlus" Member="ProdPlus">
+    <Type Name="ProdPlus">
+      <Column Name="IdProdPlus" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QtdProdPlusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalPlusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioPlusZ3" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdPlusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalPlusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioPlusZ2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdPlusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoTotalPlusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioPlusZ1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdStat" Member="ProdStat">
+    <Type Name="ProdStat">
+      <Column Name="IdProdStat" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Artigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumBatch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PesoNominal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tara" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdOk" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedio" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesvioPadrao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu1Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdPerc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdTu2Lim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdData" Member="SdData">
+    <Type Name="SdData">
+      <Column Name="IdSdData" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PesoNom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TaraMedia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TamArt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumProdNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RendAlvo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TempoAfericao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FtCorrecao" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TamMax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DensEspec" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CorrDens" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdGleit" Member="SdGleit">
+    <Type Name="SdGleit">
+      <Column Name="IdSdGleit" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PesoRef" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimAlto" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="T1LimPos" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="T1LimNeg" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimBaixo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VarLim" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdPcs" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RangeTol" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdGrund" Member="SdGrund">
+    <Type Name="SdGrund">
+      <Column Name="IdGrund" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumVersion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NomeArt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodEAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UnidPeso" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdStat" Member="SdStat">
+    <Type Name="SdStat">
+      <Column Name="IdSdStat" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumBatch" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimTo2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimTo1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimTu1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LimTu2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TolerSys" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tu1Perc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TipoIntervalo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Escopo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Estat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SdStat2" Member="SdStat2">
+    <Type Name="SdStat2">
+      <Column Name="IdSdStat2" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IdArt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tu1PercMax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNokTu1" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="QtdProdNokTu2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioProNok" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="VlMedioRef" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PrintAuto" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PrintHora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PrintBatchHora" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

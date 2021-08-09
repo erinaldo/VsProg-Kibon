@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{778F1CD9-E2E4-46D5-985D-011CFEB69220}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IfCad.My.MyApplication</StartupObject>
+    <RootNamespace>IfCad</RootNamespace>
+    <AssemblyName>IfCad</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IfCad.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>IfCad.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCadCfg.designer.vb">
+      <DependentUpon>frmCadCfg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCfg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadCfgEdit.designer.vb">
+      <DependentUpon>frmCadCfgEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadCfgEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPtoCr.designer.vb">
+      <DependentUpon>frmCadPtoCr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPtoCr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPtoCrEdit.designer.vb">
+      <DependentUpon>frmCadPtoCrEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPtoCrEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPtoCritRota.designer.vb">
+      <DependentUpon>frmCadPtoCritRota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPtoCritRota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPtoCritRotaEdit.designer.vb">
+      <DependentUpon>frmCadPtoCritRotaEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPtoCritRotaEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUser.designer.vb">
+      <DependentUpon>frmCadUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUserEdit.designer.vb">
+      <DependentUpon>frmCadUserEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUserEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUserEditSenha.designer.vb">
+      <DependentUpon>frmCadUserEditSenha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUserEditSenha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUserHab.designer.vb">
+      <DependentUpon>frmCadUserHab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUserHab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUserSeg.designer.vb">
+      <DependentUpon>frmCadUserSeg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUserSeg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUserSegEdit.designer.vb">
+      <DependentUpon>frmCadUserSegEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUserSegEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIfCad.designer.vb">
+      <DependentUpon>frmIfCad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIfCad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCadCfg.resx">
+      <DependentUpon>frmCadCfg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadCfgEdit.resx">
+      <DependentUpon>frmCadCfgEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPtoCr.resx">
+      <DependentUpon>frmCadPtoCr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPtoCrEdit.resx">
+      <DependentUpon>frmCadPtoCrEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPtoCritRota.resx">
+      <DependentUpon>frmCadPtoCritRota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPtoCritRotaEdit.resx">
+      <DependentUpon>frmCadPtoCritRotaEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUser.resx">
+      <DependentUpon>frmCadUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUserEdit.resx">
+      <DependentUpon>frmCadUserEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUserEditSenha.resx">
+      <DependentUpon>frmCadUserEditSenha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUserHab.resx">
+      <DependentUpon>frmCadUserHab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUserSeg.resx">
+      <DependentUpon>frmCadUserSeg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUserSegEdit.resx">
+      <DependentUpon>frmCadUserSegEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIfCad.resx">
+      <DependentUpon>frmIfCad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geral\Geral.vbproj">
+      <Project>{70717221-C16B-4A7C-9041-E37153528DD5}</Project>
+      <Name>Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{7DEAC748-F496-4561-9895-4E06A8F459FC}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

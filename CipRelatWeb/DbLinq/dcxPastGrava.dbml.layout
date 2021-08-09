@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dcxPastGrava">
+  <DataContextMoniker Name="/dcPastGrava" />
+  <nestedChildShapes>
+    <classShape Id="1946a5c7-41f0-4b8b-be5d-831bc933834b" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcPastGrava/Cfg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e24c7d8-5e37-4297-b7e3-8c1ac89588e8" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="799a4512-6777-4a81-a75d-2d317783d216" absoluteBounds="0.75, 2.75, 2, 4.3830997721354166">
+      <DataClassMoniker Name="/dcPastGrava/PastGravaHistDadosBk" />
+      <nestedChildShapes>
+        <elementListCompartment Id="922f05cb-722e-4203-b593-3bd9486ac023" absoluteBounds="0.765, 3.21, 1.9700000000000002, 3.823099772135417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52651fac-fe9f-4291-9885-172c624da272" absoluteBounds="3.75, 0.75, 2, 1.26050048828125">
+      <DataClassMoniker Name="/dcPastGrava/FdvGravaHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e80604a0-cc91-4146-bd0a-02ec0dc9ef3e" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40445e27-bd20-4638-84be-f94a17f476b6" absoluteBounds="3.75, 3.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/dcPastGrava/FdvGravaHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b55b6d6a-9dad-454b-83e7-05f57ded887c" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="907e9eb0-ef08-4871-99a8-5c0b4e16796a" absoluteBounds="6.75, 0.75, 2, 1.2605004882812503">
+      <DataClassMoniker Name="/dcPastGrava/PastGravaHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="62e5ca82-ef05-4b00-97d0-5f6765de8558" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fbea4819-021b-4cff-a75e-d1b5a87e2b2c" absoluteBounds="6.75, 3.75, 2, 4.3830997721354166">
+      <DataClassMoniker Name="/dcPastGrava/PastGravaHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="77dedcf7-47e6-49eb-b6a7-bf7e4b6bcc85" absoluteBounds="6.765, 4.21, 1.9700000000000002, 3.823099772135417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

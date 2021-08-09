@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1746A7B8-983C-4B30-BCA3-0C271C925AF9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KbRecEdit.My.MyApplication</StartupObject>
+    <RootNamespace>KbRecEdit</RootNamespace>
+    <AssemblyName>KbRecEdit</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alergenico\frmCadAlergRec.Designer.vb">
+      <DependentUpon>frmCadAlergRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alergenico\frmCadAlergRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="basGlobal.vb" />
+    <Compile Include="basTrataReceita.vb" />
+    <Compile Include="clsAreas.vb" />
+    <Compile Include="clsBlocos.vb" />
+    <Compile Include="clsReceita.vb" />
+    <Compile Include="Alergenico\frmCadAlerg.Designer.vb">
+      <DependentUpon>frmCadAlerg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alergenico\frmCadAlerg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alergenico\frmCadAlergEdit.Designer.vb">
+      <DependentUpon>frmCadAlergEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alergenico\frmCadAlergEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadAreas.Designer.vb">
+      <DependentUpon>frmCadAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadBlocos.Designer.vb">
+      <DependentUpon>frmCadBlocos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadBlocos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadIngred.Designer.vb">
+      <DependentUpon>frmCadIngred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadIngred.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadIngrEdita.Designer.vb">
+      <DependentUpon>frmCadIngrEdita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadIngrEdita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadItem.Designer.vb">
+      <DependentUpon>frmCadItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngred.Designer.vb">
+      <DependentUpon>frmIngred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngred.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngredEdit.Designer.vb">
+      <DependentUpon>frmIngredEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngredEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngredMat.Designer.vb">
+      <DependentUpon>frmIngredMat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngredMat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelIngred.Designer.vb">
+      <DependentUpon>frmSelIngred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelIngred.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecEdit.Designer.vb">
+      <DependentUpon>frmRecEdit.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelBloco.Designer.vb">
+      <DependentUpon>frmSelBloco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelBloco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alergenico\frmCadAlerg.resx">
+      <DependentUpon>frmCadAlerg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alergenico\frmCadAlergEdit.resx">
+      <DependentUpon>frmCadAlergEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alergenico\frmCadAlergRec.resx">
+      <DependentUpon>frmCadAlergRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadAreas.resx">
+      <DependentUpon>frmCadAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadBlocos.resx">
+      <DependentUpon>frmCadBlocos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadIngred.resx">
+      <DependentUpon>frmCadIngred.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadIngrEdita.resx">
+      <DependentUpon>frmCadIngrEdita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadItem.resx">
+      <DependentUpon>frmCadItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngred.resx">
+      <DependentUpon>frmIngred.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngredEdit.resx">
+      <DependentUpon>frmIngredEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngredMat.resx">
+      <DependentUpon>frmIngredMat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelIngred.resx">
+      <DependentUpon>frmSelIngred.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecEdit.resx">
+      <DependentUpon>frmRecEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelBloco.resx">
+      <DependentUpon>frmSelBloco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TseTbs.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geral\Geral.vbproj">
+      <Project>{85C7B9B8-E765-4CBC-90F6-ECB303A159EB}</Project>
+      <Name>Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{28E8644D-BCA9-464D-B9F2-A84CF356E5A5}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot16x16Ingred.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlkRes1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot16x16SetaAbaixo1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot16x16SetaAcima1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tse.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

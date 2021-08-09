@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB139086-2650-44CD-A61E-046F886E74BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KbCipRotas.My.MyApplication</StartupObject>
+    <RootNamespace>KbCipRotas</RootNamespace>
+    <AssemblyName>KbCipRotas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KbCipRotas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>KbCipRotas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="basGlobal.vb" />
+    <Compile Include="frmCadFlip.designer.vb">
+      <DependentUpon>frmCadFlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadFlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadMotor.designer.vb">
+      <DependentUpon>frmCadMotor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadMotor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPf.designer.vb">
+      <DependentUpon>frmCadPf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPtoCr.designer.vb">
+      <DependentUpon>frmCadPtoCr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPtoCr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadRotasLim.designer.vb">
+      <DependentUpon>frmCadRotasLim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadRotasLim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadRotasLimEdit.Designer.vb">
+      <DependentUpon>frmCadRotasLimEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadRotasLimEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadRotasPtoCr.designer.vb">
+      <DependentUpon>frmCadRotasPtoCr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadRotasPtoCr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadTq.designer.vb">
+      <DependentUpon>frmCadTq.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadTq.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadValv.designer.vb">
+      <DependentUpon>frmCadValv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadValv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesquisa.designer.vb">
+      <DependentUpon>frmPesquisa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesquisa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRotaEdita.designer.vb">
+      <DependentUpon>frmRotaEdita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRotaEdita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelDep.designer.vb">
+      <DependentUpon>frmSelDep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelDep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelMot.designer.vb">
+      <DependentUpon>frmSelMot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelMot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelPf.designer.vb">
+      <DependentUpon>frmSelPf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelPf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelValv.designer.vb">
+      <DependentUpon>frmSelValv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelValv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCadFlip.resx">
+      <DependentUpon>frmCadFlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadMotor.resx">
+      <DependentUpon>frmCadMotor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPf.resx">
+      <DependentUpon>frmCadPf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPtoCr.resx">
+      <DependentUpon>frmCadPtoCr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadRotasLim.resx">
+      <DependentUpon>frmCadRotasLim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadRotasLimEdit.resx">
+      <DependentUpon>frmCadRotasLimEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadRotasPtoCr.resx">
+      <DependentUpon>frmCadRotasPtoCr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadTq.resx">
+      <DependentUpon>frmCadTq.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadValv.resx">
+      <DependentUpon>frmCadValv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesquisa.resx">
+      <DependentUpon>frmPesquisa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRotaEdita.resx">
+      <DependentUpon>frmRotaEdita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelDep.resx">
+      <DependentUpon>frmSelDep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelMot.resx">
+      <DependentUpon>frmSelMot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelPf.resx">
+      <DependentUpon>frmSelPf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelValv.resx">
+      <DependentUpon>frmSelValv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot16x16Sair.png" />
+    <Content Include="Resources\Bot16x16_Ajuda.bmp" />
+    <Content Include="Resources\Bot16x16_Append.bmp" />
+    <Content Include="Resources\Bot16x16_Exclui.bmp" />
+    <Content Include="Resources\Bot16x16_Insere.bmp" />
+    <Content Include="Resources\Bot32x32_Find.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\document_delete.png" />
+    <None Include="Resources\document_edit.png" />
+    <None Include="Resources\message.png" />
+    <None Include="Resources\question_and_answer.png" />
+    <Content Include="Resources\tracking-v2-small.png" />
+    <None Include="Resources\up_down_question.png" />
+    <Content Include="Tse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geral\Geral.vbproj">
+      <Project>{C1DBC08C-6CF6-4F36-B1A9-4688D3BB2C96}</Project>
+      <Name>Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{7DEAC748-F496-4561-9895-4E06A8F459FC}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

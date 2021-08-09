@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MatGrava" EntityNamespace="nsMatGrava" ContextNamespace="nsMatGrava" Class="dcMatGrava" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=MatGrava;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csMatGrava" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MatGravaHistDados" Member="MatGravaHistDados">
+    <Type Name="MatGravaHistDados">
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TE6201" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6202" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6203" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6204" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6205" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6206" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6207" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6208" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6209" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6210" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6211" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6212" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6213" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6214" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6215" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6216" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6217" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6218" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6255" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6256" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6257" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6258" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6259" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TE6260" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="CodProd_TE6201" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6202" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6203" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6204" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6205" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6206" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6207" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6208" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6209" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6210" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6211" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6212" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6213" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6214" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6215" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6216" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6217" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6218" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6255" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6256" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6257" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6258" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6259" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProd_TE6260" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MatHistDados" Member="MatHistDados">
+    <Type Name="MatHistDados">
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SeqTq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodProduto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Temperatura" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HrsValidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

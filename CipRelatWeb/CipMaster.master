@@ -1,0 +1,155 @@
+<%@ Master Language="VB" Inherits="CipRelatWeb.CipMaster" Codebehind="CipMaster.master.vb" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<%--<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">--%>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>CipRelatWeb</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+     <%--  text-align: -moz-center;--%><%--    margin-top: 0px; --%>    
+    <style type="text/css">
+    body
+    {
+    background-image:url('Img/Cab1.png');
+    background-repeat:repeat-x;
+    margin-left: 0px;
+    margin-top: 0;
+    padding: 0;
+    }
+    
+    .wrapper #container {
+    width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+    z-index:1;
+   }
+    
+    .MnuBotao
+    {
+    background-image: url('Img/CabPc.png'); 
+    background-repeat: repeat-x;
+    width: 176px;
+    text-align: center;
+    }
+    
+    .MnuLadoDir
+    {
+    background-image: url('Img/CabPd.png'); 
+    background-repeat: repeat-x;
+    width: 72px;
+    }
+    
+    .MnuLadoEsq
+    {
+    background-image: url('Img/CabPe.png'); 
+    background-repeat: repeat-x;
+    width: 72px;
+    }
+    
+    table.menu
+    {
+        margin:0px auto;
+        text-align: center;
+    }
+   </style>
+</head>
+<body class="wrapper">
+    <form id="form1" runat="server" title="CipRelatWeb">
+
+        <div id="Div1" style="top:15px; left:15px; position:absolute; width: 72px;z-index:10">
+            <asp:Image ID="imgLogo" runat="server" ImageUrl="~/Img/unilever.png" height="72" width="72px"/>
+        </div>
+
+        <div id="container">
+
+
+            <table width="1024px" cellspacing="0" style="background-image:url('~/Img/Cab1.png');">
+                <tr>
+                    <td colspan="7" height="34px">
+                       <br />
+                    </td>
+                </tr>
+                <tr height="60">
+
+                    <td class="MnuLadoEsq">
+                    </td>
+
+                    <td class="MnuBotao">
+
+                        <%--Botão Home--%>
+				        <asp:HyperLink ID="hltHome" runat="server" font-family="Verdana" 
+                            font-size="20px" NavigateUrl="~/Default.aspx" Font-Bold="True" 
+                                EnableViewState="False" Font-Underline="False" EnableTheming="True" 
+                            ForeColor="Black">
+                            Home
+                        </asp:HyperLink>
+
+                    </td>
+
+                    <td class="MnuBotao">
+
+                        <%--Botão Usuário--%>
+ 				        <asp:HyperLink ID="hltDossie" runat="server" font-family="Verdana" 
+                            font-size="20px" Font-Bold="True" 
+                            EnableViewState="False" Font-Underline="False" EnableTheming="True" 
+                            ForeColor="Black" NavigateUrl="~/RelatCipDossie.aspx">Dossiê</asp:HyperLink>
+
+                    </td>
+
+                    <td class="MnuBotao">
+
+                        <%--Botão Administração--%>
+ 				        <asp:HyperLink ID="hltPeriodo" runat="server" font-family="Verdana" 
+                            font-size="20px" Font-Bold="True" 
+                            EnableViewState="False" Font-Underline="False" EnableTheming="True" 
+                            ForeColor="Black" NavigateUrl="~/RelatCipPeriodo.aspx">Período</asp:HyperLink>
+ 
+                    </td>
+                    <td class="MnuBotao">
+
+                       <%--Botão Projetos--%>
+ 				        <asp:HyperLink ID="hltAnorm" runat="server" font-family="Verdana" 
+                            font-size="20px" Font-Bold="True" 
+                            EnableViewState="False" Font-Underline="False" EnableTheming="True" 
+                            ForeColor="Black" NavigateUrl="~/RelatCipAnorm.aspx">Anormalidades</asp:HyperLink>
+                        
+                    </td>
+
+                    <td class="MnuBotao">
+
+                        <%--Botão Logout--%>
+ 				        <asp:LinkButton ID="hltPeriod" runat="server" font-family="Verdana" 
+                            font-size="20px" Font-Bold="True" 
+                            EnableViewState="False" Font-Underline="False" EnableTheming="True" 
+                            ForeColor="Black" PostBackUrl="~/RelatCipMes.aspx">Periodicidade</asp:LinkButton>
+                    </td>
+
+                    <td class="MnuLadoDir">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="7" height="12px">
+                        <br />
+                    </td>
+                </tr>
+            </table>
+
+            <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+             </asp:contentplaceholder>
+
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

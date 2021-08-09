@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CipValid" EntityNamespace="nsCipValid" ContextNamespace="nsCipValid" Class="dcCipValid" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=CipValid;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csCipValid" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CadCfg" Member="CadCfg">
+    <Type Name="CadCfg">
+      <Column Name="Cfg" Type="System.String" DbType="NVarChar(256) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RelatXlsLog" Member="RelatXlsLog">
+    <Type Name="RelatXlsLog">
+      <Column Name="Data" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadPtoCr" Member="CadPtoCr">
+    <Type Name="CadPtoCr">
+      <Column Name="PtoCrId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pergunta" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadRotaPtoCr" Member="CadRotaPtoCr">
+    <Type Name="CadRotaPtoCr">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PtoCrId" Type="System.String" DbType="Char(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadRotasLim" Member="CadRotasLim">
+    <Type Name="CadRotasLim">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LimRev" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TempMax" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempMin" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="CondMax" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="CondMin" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="VazaoMax" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="VazaoMin" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="TempoAjuste" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadRotasVl" Member="CadRotasVl">
+    <Type Name="CadRotasVl">
+      <Column Name="RotaId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LimRevAtual" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrcTempoMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadUser" Member="CadUser">
+    <Type Name="CadUser">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Senha" Type="System.String" DbType="NVarChar(40)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadUserHab" Member="CadUserHab">
+    <Type Name="CadUserHab">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SegId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadUserSeg" Member="CadUserSeg">
+    <Type Name="CadUserSeg">
+      <Column Name="SegId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Descr" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipHist" Member="CipHist">
+    <Type Name="CipHist">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Circ" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataHoraIni" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataHoraFim" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LimRev" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserIdValid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FlagAtrasado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FlagCancelado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipHistAnorm" Member="CipHistAnorm">
+    <Type Name="CipHistAnorm">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AnormId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AnormEquip" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnormEvnt" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ObsSts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Obs" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BlkPasso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipHistDados" Member="CipHistDados">
+    <Type Name="CipHistDados">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Temp" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Cond" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Vazao" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BlkPasso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipHistPtoCr" Member="CipHistPtoCr">
+    <Type Name="CipHistPtoCr">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PtoCrId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Resp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipSchedPer" Member="CipSchedPer">
+    <Type Name="CipSchedPer">
+      <Column Name="PerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PerNHoras" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataHoraIni" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipSchedPerMes" Member="CipSchedPerMes">
+    <Type Name="CipSchedPerMes">
+      <Column Name="PerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DiaDoMes" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipSchedPerSem" Member="CipSchedPerSem">
+    <Type Name="CipSchedPerSem">
+      <Column Name="PerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DiaDaSemana" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipSchedProg" Member="CipSchedProg">
+    <Type Name="CipSchedProg">
+      <Column Name="ProgId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Circ" Type="System.String" DbType="NVarChar(1)" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sts" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipSeq" Member="CipSeq">
+    <Type Name="CipSeq">
+      <Column Name="Ano" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CipSeq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

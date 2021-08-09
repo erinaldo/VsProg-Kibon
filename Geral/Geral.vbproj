@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{70717221-C16B-4A7C-9041-E37153528DD5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Geral</RootNamespace>
+    <AssemblyName>Geral</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Geral.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>Geral.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="basTrataArquivo.vb" />
+    <Compile Include="basTrataDados.vb" />
+    <Compile Include="clsBloco.vb" />
+    <Compile Include="clsBlocos.vb" />
+    <Compile Include="clsIngred.vb" />
+    <Compile Include="clsIngreds.vb" />
+    <Compile Include="clsParametro.vb" />
+    <Compile Include="clsParametros.vb" />
+    <Compile Include="clsProjCfg.vb" />
+    <Compile Include="clsTrataArea.vb" />
+    <Compile Include="dcxCipGrava.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxCipGrava.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxCipPlanej.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxCipPlanej.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxCipRotas.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxCipRotas.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxCipValid.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxCipValid.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxMatGrava.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxMatGrava.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxMistGrava.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxMistGrava.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxPastGrava.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxPastGrava.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxRanges.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxRanges.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxReceitas.designer.vb">
+      <DependentUpon>dcxReceitas.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dcxReceitas.vb">
+      <DependentUpon>dcxReceitas.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="dcxToledo.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dcxToledo.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelCip.designer.vb">
+      <DependentUpon>frmSelCip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelCip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelPtoCr.designer.vb">
+      <DependentUpon>frmSelPtoCr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelPtoCr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelRec.designer.vb">
+      <DependentUpon>frmSelRec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelRec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelRota.designer.vb">
+      <DependentUpon>frmSelRota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelRota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelUser.designer.vb">
+      <DependentUpon>frmSelUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxCipGrava.dbml.layout">
+      <DependentUpon>dcxCipGrava.dbml</DependentUpon>
+    </None>
+    <None Include="dcxCipPlanej.dbml.layout">
+      <DependentUpon>dcxCipPlanej.dbml</DependentUpon>
+    </None>
+    <None Include="dcxCipRotas.dbml.layout">
+      <DependentUpon>dcxCipRotas.dbml</DependentUpon>
+    </None>
+    <None Include="dcxCipValid.dbml.layout">
+      <DependentUpon>dcxCipValid.dbml</DependentUpon>
+    </None>
+    <None Include="dcxMatGrava.dbml.layout">
+      <DependentUpon>dcxMatGrava.dbml</DependentUpon>
+    </None>
+    <None Include="dcxMistGrava.dbml.layout">
+      <DependentUpon>dcxMistGrava.dbml</DependentUpon>
+    </None>
+    <None Include="dcxPastGrava.dbml.layout">
+      <DependentUpon>dcxPastGrava.dbml</DependentUpon>
+    </None>
+    <None Include="dcxRanges.dbml.layout">
+      <DependentUpon>dcxRanges.dbml</DependentUpon>
+    </None>
+    <None Include="dcxReceitas.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxReceitas.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxToledo.dbml.layout">
+      <DependentUpon>dcxToledo.dbml</DependentUpon>
+    </None>
+    <None Include="dcxReceitas.dbml.layout">
+      <DependentUpon>dcxReceitas.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelCip.resx">
+      <DependentUpon>frmSelCip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelPtoCr.resx">
+      <DependentUpon>frmSelPtoCr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelRec.resx">
+      <DependentUpon>frmSelRec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelRota.resx">
+      <DependentUpon>frmSelRota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelUser.resx">
+      <DependentUpon>frmSelUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dcxCipGrava.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxCipGrava.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxCipPlanej.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxCipPlanej.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxCipRotas.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxCipRotas.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxCipValid.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxCipValid.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxMatGrava.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxMatGrava.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxMistGrava.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxMistGrava.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxPastGrava.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxPastGrava.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxRanges.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxRanges.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dcxToledo.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>dcxToledo.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_blue_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_blue_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{486CE74A-9E63-47AA-8605-0530869023D5}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

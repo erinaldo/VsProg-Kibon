@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5ADE3B7F-00FB-4C2F-A904-15F389CAD597}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IfSrvCkh.My.MyApplication</StartupObject>
+    <RootNamespace>IfSrvCkh</RootNamespace>
+    <AssemblyName>IfSrvCkh</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>IfSrvCkh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DocumentationFile>IfSrvCkh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tse.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="KbCipPlanejCtrl">
+      <HintPath>..\Bin\KbCipPlanejCtrl.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConfirmaFim.Designer.vb">
+      <DependentUpon>frmConfirmaFim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmaFim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIfSrvChk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIfSrvChk.Designer.vb">
+      <DependentUpon>frmIfSrvChk.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKbCipPlanejCtrl.Designer.vb">
+      <DependentUpon>frmKbCipPlanejCtrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKbCipPlanejCtrl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKbMatGrava.Designer.vb">
+      <DependentUpon>frmKbMatGrava.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKbMatGrava.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKbMistGrava.Designer.vb">
+      <DependentUpon>frmKbMistGrava.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKbMistGrava.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKbPastGrava.Designer.vb">
+      <DependentUpon>frmKbPastGrava.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmKbPastGrava.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmConfirmaFim.resx">
+      <DependentUpon>frmConfirmaFim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIfSrvChk.resx">
+      <DependentUpon>frmIfSrvChk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKbCipPlanejCtrl.resx">
+      <DependentUpon>frmKbCipPlanejCtrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKbMatGrava.resx">
+      <DependentUpon>frmKbMatGrava.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKbMistGrava.resx">
+      <DependentUpon>frmKbMistGrava.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKbPastGrava.resx">
+      <DependentUpon>frmKbPastGrava.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bot48x48_Sair.bmp" />
+    <None Include="Resources\Bot16x16Sair.png" />
+    <None Include="Resources\Tse.ico" />
+    <None Include="Resources\TseRed.ico" />
+    <Content Include="Tse.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Geral\Geral.vbproj">
+      <Project>{70717221-C16B-4A7C-9041-E37153528DD5}</Project>
+      <Name>Geral</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KbMatGrava\KbMatGrava.vbproj">
+      <Project>{34299267-9DF8-4C81-8132-05D4F7E5E4D4}</Project>
+      <Name>KbMatGrava</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KbMistGrava\KbMistGrava.vbproj">
+      <Project>{766EE863-FBDE-48BB-9698-9F592CDC1E09}</Project>
+      <Name>KbMistGrava</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KbPastGrava\KbPastGrava.vbproj">
+      <Project>{8BA0A333-4A1D-4A93-ADE2-2BD10C73C65E}</Project>
+      <Name>KbPastGrava</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KbProdPlanejCtrl\KbProdPlanejCtrl.vbproj">
+      <Project>{fb438498-4aec-4b7e-8bb6-c679d15f2396}</Project>
+      <Name>KbProdPlanejCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.vbproj">
+      <Project>{486CE74A-9E63-47AA-8605-0530869023D5}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

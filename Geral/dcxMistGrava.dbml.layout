@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="dcxMistGrava">
+  <DataContextMoniker Name="/dcMistGrava" />
+  <nestedChildShapes>
+    <classShape Id="97301f15-3f4d-416c-b20f-ae959982e08c" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcMistGrava/Cfg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e343143-136c-49ef-966a-0ccb22c99ab7" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8dc12faf-86fb-4fa6-93ff-708e9936855f" absoluteBounds="3.75, 0.75, 2, 3.7257104492187496">
+      <DataClassMoniker Name="/dcMistGrava/ProdMist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9dde2e4-6a87-41b7-849e-b0daacd0d187" absoluteBounds="3.765, 1.21, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2bfd2bbb-8898-4b27-b75c-20160314d047" absoluteBounds="0.75, 5.75, 2, 2.5752791341145826">
+      <DataClassMoniker Name="/dcMistGrava/ProdMistDos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d47b75a-02d7-4730-ba98-e71c1ff95403" absoluteBounds="0.765, 6.21, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f5ffaae-eaa1-48d2-97d0-a863df03d3c1" absoluteBounds="0.75, 2.75, 2, 1.5891951497395831">
+      <DataClassMoniker Name="/dcMistGrava/Tanques" />
+      <nestedChildShapes>
+        <elementListCompartment Id="118c734e-02f8-493f-b692-ec6e10fa12b9" absoluteBounds="0.76499999999999968, 3.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

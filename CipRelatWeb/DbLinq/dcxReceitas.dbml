@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Receitas" EntityNamespace="nsReceitas" ContextNamespace="nsReceitas" Class="dcReceitas" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=Receitas;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csReceitas" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Areas" Member="Areas">
+    <Type Name="Areas">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descr" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="UsaPlanejBrix" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsaIngredMan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UsaPesoRef" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RsLinxTopic" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="Users">
+      <Column Name="Login" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pwd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Blocos" Member="Blocos">
+    <Type Name="Blocos">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BlkDescr" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Mnemonico" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BlocosItens" Member="BlocosItens">
+    <Type Name="BlocosItens">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemSeq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemDescr" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="UEng" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="ValorDefault" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Multiplic" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="FlagPeso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CadAlergenicos" Member="CadAlergenicos">
+    <Type Name="CadAlergenicos">
+      <Column Name="AlergId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Codigo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Hab175" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConfigGeral" Member="ConfigGeral">
+    <Type Name="ConfigGeral">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DestTqs" Member="DestTqs">
+    <Type Name="DestTqs">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TqNome" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TqDescr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="EndStatus" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="EndPlanejamento" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="EndProduzido" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Ingred" Member="Ingred">
+    <Type Name="Ingred">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IngrCodigo" Type="System.String" DbType="NVarChar(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IngrNome" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rec" Member="Rec">
+    <Type Name="Rec">
+      <Column Name="Area" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNome" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RecDescr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PesoRefer" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Pasta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Subpasta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Densidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecBlocos" Member="RecBlocos">
+    <Type Name="RecBlocos">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemSeq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BlkNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Param01" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param02" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param03" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param04" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param05" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param06" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param07" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param08" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Param09" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecIngred" Member="RecIngred">
+    <Type Name="RecIngred">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemSeq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IngrCodigo" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Peso" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecIngredMat" Member="RecIngredMat">
+    <Type Name="RecIngredMat">
+      <Column Name="Area" Type="System.String" DbType="NVarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ItemSeq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IngrCodigo" Type="System.String" DbType="NVarChar(6)" CanBeNull="true" />
+      <Column Name="Peso" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RecTeste" Member="RecTeste">
+    <Type Name="RecTeste">
+      <Column Name="Area" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNome" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RecDescr" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="PesoRefer" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Pasta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SubPasta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Densidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CipGrava" EntityNamespace="nsCipGrava" ContextNamespace="nsCipGrava" Class="dcCipGrava" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=CipGrava;Persist Security Info=True;User ID=Tse" SettingsObjectName="Geral.My.MySettings" SettingsPropertyName="csCipGrava" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cfg" Member="Cfg">
+    <Type Name="Cfg">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipGravaHistDados" Member="CipGravaHistDados">
+    <Type Name="CipGravaHistDados">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cond" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Temp" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Vazao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Blk" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipCondGeralHist" Member="CipCondGeralHist">
+    <Type Name="CipCondGeralHist">
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CircA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CircB" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CircC" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CircD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CircE" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="T6503" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="T6535" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipGravaConta" Member="CipGravaConta">
+    <Type Name="CipGravaConta">
+      <Column Name="Tq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Contagem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CipGravaHist" Member="CipGravaHist">
+    <Type Name="CipGravaHist">
+      <Column Name="CipId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Circ" Type="System.String" DbType="NVarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Fim" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RotaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RotaDescr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RecId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecDescr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Analise" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

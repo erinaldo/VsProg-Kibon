@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dcxCipGrava">
+  <DataContextMoniker Name="/dcCipGrava" />
+  <nestedChildShapes>
+    <classShape Id="dbc12ab9-6278-4cfe-ad80-358e7a7fe646" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipGrava/Cfg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd2e0945-8d07-4f3a-9393-b58eb9244261" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80ed29a1-bdcf-4d2e-8956-0dd8f121226c" absoluteBounds="0.75, 2.75, 2, 1.7535424804687505">
+      <DataClassMoniker Name="/dcCipGrava/CipGravaHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3b81dc7f-4ac6-4133-a2f8-b318f7ef947b" absoluteBounds="0.765, 3.21, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9dbfcb63-a828-4e59-9ab2-706c2bf1ba21" absoluteBounds="3.75, 0.75, 2, 2.0822371419270831">
+      <DataClassMoniker Name="/dcCipGrava/CipCondGeralHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddfecb0e-faa3-4519-aba1-52eec1d827fc" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12eeca7e-29cd-48db-9468-cf2695f96861" absoluteBounds="3.75, 3.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipGrava/CipGravaConta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f36208ac-30b7-406e-87fc-cb00c8142121" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95e10eb4-7a6b-4b59-b7b5-86055a4d40ab" absoluteBounds="6.75, 0.75, 2, 2.2465844726562505">
+      <DataClassMoniker Name="/dcCipGrava/CipGravaHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="18434ab2-f889-4df9-a74e-3635e2cacce0" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 13.875" name="dcxCipValid">
+  <DataContextMoniker Name="/dcCipValid" />
+  <nestedChildShapes>
+    <classShape Id="369e6f93-77b7-47c2-a230-74b92307d3d2" absoluteBounds="0.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipValid/CadCfg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3ea9ff0e-f936-4716-aa34-20898ff2a5db" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11916179-e279-434e-9a23-ba0927eec38d" absoluteBounds="0.75, 2.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipValid/RelatXlsLog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc389390-67e5-453a-b3bb-3c588489e201" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="445482ed-2ba1-452a-b991-addac59150bd" absoluteBounds="3.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipValid/CadPtoCr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94ace094-bcf0-4291-a359-77ac3aa66a19" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2f3bb55-f27b-4c87-83e6-88754b5024b6" absoluteBounds="3.75, 2.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipValid/CadRotaPtoCr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1f0ecfd-f543-472c-8779-86d19d8a2eb7" absoluteBounds="3.765, 3.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34b1b17c-9451-4503-8ff1-445ad0ed1cc8" absoluteBounds="0.75, 5.75, 2, 2.4109318033854166">
+      <DataClassMoniker Name="/dcCipValid/CadRotasLim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04032cbe-c361-47ff-b960-fdacf0df77a0" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32987eac-ab6b-4575-aea5-057034394b66" absoluteBounds="3.75, 5.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipValid/CadRotasVl" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b91d4828-2458-4e1b-a3f1-76a7298d050d" absoluteBounds="3.765, 6.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="502eef9a-bdc7-4914-8f6a-12a601233725" absoluteBounds="6.75, 0.75, 2, 1.4248478190104166">
+      <DataClassMoniker Name="/dcCipValid/CadUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9540770c-b25b-46e2-9060-228422308427" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3660ae38-150f-4226-9119-bf080bba5d67" absoluteBounds="6.75, 3.75, 2, 1.096153157552084">
+      <DataClassMoniker Name="/dcCipValid/CadUserHab" />
+      <nestedChildShapes>
+        <elementListCompartment Id="130dc4fb-6da0-4283-a44e-c0106879b7a7" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abb68815-0740-48ae-a5f9-1b8de2fdb3ab" absoluteBounds="6.75, 5.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipValid/CadUserSeg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="470fd431-27a6-43a2-b9a0-b027bfff982e" absoluteBounds="6.765, 6.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b5a2b3a-05f1-4cc4-a164-19a6a49d604d" absoluteBounds="3.75, 8.75, 2, 2.7396264648437487">
+      <DataClassMoniker Name="/dcCipValid/CipHist" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f067158-3216-4f69-bf57-9ce0c0674857" absoluteBounds="3.765, 9.21, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9873e95b-c324-49ba-9056-b7167de08564" absoluteBounds="6.75, 8.75, 2, 2.2465844726562487">
+      <DataClassMoniker Name="/dcCipValid/CipHistAnorm" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edcceb8e-df66-4283-aad5-9b5d3d0dd8d6" absoluteBounds="6.765, 9.21, 1.9700000000000002, 1.68658447265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b94f304a-6ce8-40e1-b712-2d8be69b275c" absoluteBounds="9.75, 0.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/dcCipValid/CipHistDados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0472fb15-d2f5-4005-8c05-8324ab95303e" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b75376d-69e9-4e42-a9c9-e125502a278c" absoluteBounds="9.75, 3.75, 2, 1.2605004882812505">
+      <DataClassMoniker Name="/dcCipValid/CipHistPtoCr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7f12dbf-1554-4fbe-8471-2761a161b5ae" absoluteBounds="9.765, 4.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41a87961-fed8-4977-a57b-dcfec202ebef" absoluteBounds="9.75, 6.75, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/dcCipValid/CipSchedPer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f251c93-7efe-471f-8b73-8ed3224d412e" absoluteBounds="9.765, 7.21, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d98125db-196d-43ae-a136-22db77de2761" absoluteBounds="9.75, 9.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/dcCipValid/CipSchedPerMes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72eab929-082c-443e-aa66-1e63c8a63260" absoluteBounds="9.765, 10.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40949d32-9467-48c9-824a-954a1b2f0472" absoluteBounds="6.75, 11.75, 2, 1.0961531575520844">
+      <DataClassMoniker Name="/dcCipValid/CipSchedPerSem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6b1b233-6c1b-4b4d-9a1c-72ea1c008689" absoluteBounds="6.765, 12.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29cb630c-520e-42a4-9de4-22009acf72b5" absoluteBounds="9.75, 11.75, 2, 1.9178898111979166">
+      <DataClassMoniker Name="/dcCipValid/CipSchedProg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c34d65fb-1931-472e-9ae8-b912aa0e2409" absoluteBounds="9.765, 12.21, 1.9700000000000002, 1.3578898111979165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f0597b7-2930-4253-84d0-86643593ff7d" absoluteBounds="12.75, 0.75, 2, 1.0961531575520835">
+      <DataClassMoniker Name="/dcCipValid/CipSeq" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcc908e4-c111-4634-90af-0325d91182b3" absoluteBounds="12.765, 1.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MistGrava" EntityNamespace="nsMistGrava" ContextNamespace="nsMistGrava" Class="dcMistGrava" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=OS1\WinCC;Initial Catalog=MistGrava;Persist Security Info=True;User ID=Tse" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csMistGrava" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Cfg" Member="Cfg">
+    <Type Name="Cfg">
+      <Column Name="Item" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Valor" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdMist" Member="ProdMist">
+    <Type Name="ProdMist">
+      <Column Name="TqOrigem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumSeqTq" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHoraMist" Type="System.String" DbType="NVarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecRej" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Peso" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataHoraTransf" Type="System.String" DbType="NVarChar(14)" CanBeNull="true" />
+      <Column Name="Past" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dest" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ing1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing2" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing3" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing7" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing8" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Ing9" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdMistDos" Member="ProdMistDos">
+    <Type Name="ProdMistDos">
+      <Column Name="BatchId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataHora" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Origem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Destino" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RecNum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MatPrima" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuantPed" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="QuantDsg" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="Tempet" Type="System.Single" DbType="Real" CanBeNull="true" />
+      <Column Name="StsDos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tanques" Member="Tanques">
+    <Type Name="Tanques">
+      <Column Name="TqId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TqNome" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DbDados" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="DbSts" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
